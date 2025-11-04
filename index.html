@@ -3,20 +3,37 @@
 <head>
     <title>Combinators</title>
     <style>
-        
+        div p{
+            color: green;
+        }
+
+        div > p{
+            background-color: yellow;
+        }
+
+        div + p{
+            background-color: cyan;
+        }
+
+        div ~ p{
+            color: purple;
+        }
+
     </style>
 </head>
 
 <body>
     <span>
-        <div>First</div>
+        <div>
+            <p>First</p>
         <article>
-            <div>Second</div>
+            <p>Second</p>
         </article>
-        <div>Third</div>
+        <p>Third</p>
+    </div>
     </span>
-    <div>Fourth</div>
-    <div>Fifth</div>
+    <p>Fourth</p>
+    <p>Fifth</p>
 </body>
 
 </html>
